@@ -1,15 +1,11 @@
 # 🛡️ Web Application Security Audit (Internee.pk - Assignment 6)
 
 ## 📌 Objective
-The objective of this project was to perform a comprehensive security audit on a staging environment to identify critical vulnerabilities, specifically targeting SQL Injection (SQLi), Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF). 
+The objective of this project was to perform a comprehensive security audit to identify critical vulnerabilities, specifically targeting SQL Injection (SQLi), Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF). 
 
-## 🎯 Target Environment & Pivot
-* **Initial Target:** OWASP Juice Shop (`demo.owasp-juice.shop`)
-* **Active Target:** Altoro Mutual (`testfire.net`)
-* *Environment Note:* During the designated testing window, the official OWASP Juice Shop server experienced a Heroku application crash. To ensure the audit was completed without delay, the testing scope was successfully pivoted to IBM's deliberately vulnerable Altoro Mutual banking application.
-
-**Evidence of Initial Server Crash:**
-![Juice Shop Error](image_cc5a79.png)
+## 🎯 Target Environment
+* **Target Application:** Altoro Mutual (`testfire.net`)
+* **Description:** A deliberately vulnerable banking web application hosted by IBM, designed specifically for professional web application security testing.
 
 ## 🛠️ Tools & Methodology
 * **Operating System:** Kali Linux
