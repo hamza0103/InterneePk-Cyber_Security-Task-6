@@ -31,7 +31,7 @@ The objective of this project was to perform a comprehensive security audit on a
 * **Payload Tested:** `' OR 1=1 --`
 * **Analysis:** Probed the username field with a classic boolean-based SQL injection payload to test for authentication bypass vulnerabilities and database error handling.
 * **Execution Evidence:**
-![SQL Injection Probe](SQL.jpg)
+![SQL Injection Probe](SQL.png)
 
 ### 3. Automated Security Assessment (Burp Suite Pro)
 Following the manual verification of XSS and SQLi, an automated Active Scan was executed via Burp Suite Professional to map out deeper architectural flaws, including CSRF misconfigurations, cleartext submissions, and DOM-based manipulation.
