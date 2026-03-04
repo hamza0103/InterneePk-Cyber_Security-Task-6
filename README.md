@@ -6,7 +6,10 @@ The objective of this project was to perform a comprehensive security audit on a
 ## 🎯 Target Environment & Pivot
 * **Initial Target:** OWASP Juice Shop (`demo.owasp-juice.shop`)
 * **Active Target:** Altoro Mutual (`testfire.net`)
-* *Environment Note:* During the designated testing window, the official OWASP Juice Shop server experienced a Heroku application crash (see `image_cc5a79.png`). To ensure the audit was completed without delay, the testing scope was successfully pivoted to IBM's deliberately vulnerable Altoro Mutual banking application.
+* *Environment Note:* During the designated testing window, the official OWASP Juice Shop server experienced a Heroku application crash. To ensure the audit was completed without delay, the testing scope was successfully pivoted to IBM's deliberately vulnerable Altoro Mutual banking application.
+
+**Evidence of Initial Server Crash:**
+![Juice Shop Error](image_cc5a79.png)
 
 ## 🛠️ Tools & Methodology
 * **Operating System:** Kali Linux
@@ -28,16 +31,15 @@ The objective of this project was to perform a comprehensive security audit on a
 * **Payload Tested:** `' OR 1=1 --`
 * **Analysis:** Probed the username field with a classic boolean-based SQL injection payload to test for authentication bypass vulnerabilities and database error handling.
 * **Execution Evidence:**
-    ![SQL Injection Probe](SQL.jpg)
+![SQL Injection Probe](SQL.jpg)
 
 ### 3. Automated Security Assessment (Burp Suite Pro)
 Following the manual verification of XSS and SQLi, an automated Active Scan was executed via Burp Suite Professional to map out deeper architectural flaws, including CSRF misconfigurations, cleartext submissions, and DOM-based manipulation.
 
-* **Audit Results:** The scanner successfully identified **5 High-Severity** and **2 Low-Severity** vulnerabilities across the application structure.
-* **Scan Summary & Vulnerability Index:**
-    ![Burp Scanner Summary](burp 1.png)
-    <br>
-    ![Burp Scanner Contents](burp 2.png)
+* **Scan Summary:** ![Burp Scanner Summary](burp%201.png)
+
+* **Vulnerability Index:**
+![Burp Scanner Contents](burp%202.png)
 
 ---
-*This security audit was completed as part of the Cyber Security & Digital Forensics virtual internship at Internee.pk.*
+*This security audit was completed as part of a Cyber Security virtual internship.*
